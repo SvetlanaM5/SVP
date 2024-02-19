@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Tracks by genre</title>
+   </head>
+   <body>
+     <ul>
+       {% for genre in genres: %}
+       <li>
+           <a href="/tracks?genre_id={{ genre[0] }}">
+           {{ genre[1] }}
+         </a>
+       </li>
+       {% endfor %}
+     </ul>
+
+   </body>
+</html>
