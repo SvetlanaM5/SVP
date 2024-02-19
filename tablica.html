@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <title>Tablica množenja</title>
+   <style>
+     table{
+        border-collapse : collapse;
+     }
+     td{
+        border: 1px solid #ccc;
+        text-align: right;
+        padding: 2px;
+     }
+    </style> 
+</head>
+
+<body>
+
+<h1>Tablica množenja</h1>
+
+<table>
+
+<script>
+
+ var n=10;
+ for (var i = 1; i<=n; i++){
+     document.write("<tr>");
+     for (var j = 1; j<=n; j++)
+         document.write("<td>"+ (i*j) + "</td>");
+     document.write("</tr>");
+ }
+ 
+</script>
+
+</table>
+
+</body>
+</html>
+
